@@ -105,21 +105,18 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
-![image](https://github.com/user-attachments/assets/1a29aec7-9e1e-45e1-96c0-35f1551f020b) Question 1 here
+![image](https://github.com/user-attachments/assets/0ee3dcd8-04d4-4844-bff8-14aec59220c6)
+
 
 ```sql
-INSERT INTO Employee(EmployeeID,Name,Position)
-values(5,           'George Clark',  'Consultant');
-
-INSERT INTO Employee(EmployeeID,Name,Position,Department,Salary)
-values(7,           'Noah Davis',    'Manager',     'HR',          60000);
-
-INSERT INTO Employee(EmployeeID,Name,Position,Department)
-values(8,           'Ava Miller',    'Consultant',  'IT');
+INSERT INTO student_details(RollNo, Name, Gender, Subject, MARKS)
+SELECT RollNo, Name, Gender, Subject, MARKS
+FROM Archived_students;
 
 **Output:**
 
-![image](https://github.com/user-attachments/assets/4f08e69d-3696-41cc-93a1-14c259564577)
+![image](https://github.com/user-attachments/assets/a8a874d4-7ecc-44f6-abc9-3c6fd8213228)
+
 
 **Question 2**
 ---
