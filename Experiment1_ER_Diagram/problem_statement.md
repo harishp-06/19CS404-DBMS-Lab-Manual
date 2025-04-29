@@ -52,7 +52,7 @@ University
 
 ## ER Diagram:
 ![ER Diagram](er_diagram.png)
-![image](https://github.com/user-attachments/assets/dde8e2a5-650e-4c33-b5ce-6d8939a7aa43)
+![WhatsApp Image 2025-04-29 at 09 47 14_36ca4b9e](https://github.com/user-attachments/assets/96369422-5b8c-42f5-826f-89b054049d33)
 
 
 ## Entities and Attributes:
