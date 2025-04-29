@@ -103,27 +103,35 @@ CREATE TABLE Table_Name (
 );
 ```
 
-**Question 1**
+*Question 1*
 --
-![image](https://github.com/user-attachments/assets/0ee3dcd8-04d4-4844-bff8-14aec59220c6)
+![image](https://github.com/user-attachments/assets/1a29aec7-9e1e-45e1-96c0-35f1551f020b)
 
 
-```sql
-INSERT INTO student_details(RollNo, Name, Gender, Subject, MARKS)
-SELECT RollNo, Name, Gender, Subject, MARKS
-FROM Archived_students;
+sql
+--
+INSERT INTO Employee(EmployeeID,Name,Position)
+values(5,           'George Clark',  'Consultant');
 
-**Output:**
+INSERT INTO Employee(EmployeeID,Name,Position,Department,Salary)
+values(7,           'Noah Davis',    'Manager',     'HR',          60000);
 
-![image](https://github.com/user-attachments/assets/a8a874d4-7ecc-44f6-abc9-3c6fd8213228)
+INSERT INTO Employee(EmployeeID,Name,Position,Department)
+values(8,           'Ava Miller',    'Consultant',  'IT');
 
 
-**Question 2**
+*Output:*
+
+![image](https://github.com/user-attachments/assets/4f08e69d-3696-41cc-93a1-14c259564577)
+
+
+*Question 2*
 ---
 ![image](https://github.com/user-attachments/assets/bad81a8b-bad3-4abe-9bb9-a78f3df20d50)
 
 
-```sql
+sql
+-- 
 CREATE TABLE Attendance (  
     AttendanceID INTEGER PRIMARY KEY,  
     EmployeeID INTEGER,  
@@ -132,32 +140,40 @@ CREATE TABLE Attendance (
     FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)  
 );
 
-**Output:**
+
+*Output:*
 
 ![image](https://github.com/user-attachments/assets/5546b497-d1e5-4ee9-94c0-ef0b46aff8f6)
 
 
-**Question 3**
+*Question 3*
 ---
 ![image](https://github.com/user-attachments/assets/a828529f-6fff-42fe-a4cb-c291422cf102)
 
-```sql
+
+sql
+--
 ALTER TABLE Employees
 ADD COLUMN Date_of_joining Date;
 
 ALTER TABLE Employees
 RENAME COLUMN job_title To Designation;
 
-**Output:**
+
+
+
+*Output:*
 
 ![image](https://github.com/user-attachments/assets/6f02c1a7-886d-4a24-ba4d-0b77706185ef)
 
 
-**Question 4**
+*Question 4*
 ---
 ![image](https://github.com/user-attachments/assets/104c3a88-8e14-4894-b4c9-220a25c1fd28)
 
-```sql
+
+sql
+--
  CREATE TABLE jobs (  
     job_id INTEGER PRIMARY KEY,  
     job_title TEXT NOT NULL DEFAULT '',  
@@ -165,46 +181,52 @@ RENAME COLUMN job_title To Designation;
     max_salary INTEGER DEFAULT NULL  
 );
 
-**Output:**
+
+*Output:*
 
 ![image](https://github.com/user-attachments/assets/6e389b67-8bea-4e99-9c42-d343c6846f92)
 
 
-**Question 5**
+*Question 5*
 ---
 ![image](https://github.com/user-attachments/assets/f8c8b4ea-860d-4533-86e7-39c30c74949b)
 
-```sql
+
+sql
+--
 CREATE TABLE Departments(
 DepartmentID INTEGER,
 DepartmentName TEXT
 );
 
 
-**Output:**
+*Output:*
 
 ![image](https://github.com/user-attachments/assets/6c5603b9-1821-4380-af56-37b95985a8f2)
 
-**Question 6**
+
+*Question 6*
 ---
 ![image](https://github.com/user-attachments/assets/1fe189da-4710-4d78-9281-ce6512cb7527)
 
 
-```sql
+sql
 select *from Out_of_print_books
 union all
 select *from Books
 
 
-**Output:**
+*Output:*
 
 ![image](https://github.com/user-attachments/assets/b018af7c-4b61-43a2-a2d6-0e423b24c199)
 
-**Question 7**
+
+*Question 7*
 ---
 ![image](https://github.com/user-attachments/assets/b142f374-c419-49fe-a6a4-3d29df06724a)
 
-```sql
+
+sql
 CREATE TABLE item (  
     item_id TEXT PRIMARY KEY,  
     item_desc TEXT NOT NULL,  
@@ -214,42 +236,49 @@ CREATE TABLE item (
     ON UPDATE CASCADE  
     ON DELETE CASCADE  
 );
-**Output:**
+
+
+*Output:*
 
 ![image](https://github.com/user-attachments/assets/00332d1c-fea8-44a2-b3a4-a4360ed466c7)
 
 
-**Question 8**
+*Question 8*
 ---
 ![image](https://github.com/user-attachments/assets/a3e803e3-1d80-4bd0-b776-1ce935991e42)
 
-```sql
+
+sql
 ALTER TABLE employee
 ADD COLUMN designation varchar(50);
 
 
-**Output:**
+*Output:*
 
 ![image](https://github.com/user-attachments/assets/fa3632ac-9982-4457-987d-f79549324b50)
 
-**Question 9**
+
+*Question 9*
 ---
 ![image](https://github.com/user-attachments/assets/bd937a5c-ea14-4ea7-964b-2263a2bfbad1)
 
-```sql
+
+sql
 INSERT INTO Products (ProductID, Name, Category)  
 VALUES (104, 'Tablet', 'Electronics');
 
-**Output:**
+
+*Output:*
 
 ![image](https://github.com/user-attachments/assets/c9dc4337-0bd5-46cd-83f5-f12606f2d7df)
 
 
-**Question 10**
+*Question 10*
 ---
 ![image](https://github.com/user-attachments/assets/fa338148-c01f-4a4d-bd65-c892da104f02)
 
-```sql
+
+sql
 CREATE TABLE Employees(
 EmployeeID INTEGER primary key,
 FirstName INTEGER NOT NULL,
@@ -260,10 +289,21 @@ DepartmentID INTEGER,
 foreign key(DepartmentID) references Departments(DepartmentID)
 );
 
-**Output:**
+
+*Output:*
 
 ![image](https://github.com/user-attachments/assets/e104b259-c68a-4b5a-bfbb-8167d5ce4981)
 
 
 ## RESULT
-Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
+Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
+
+
+
+
+
+
+
+
+  
+
