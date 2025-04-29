@@ -116,9 +116,11 @@ values(7,           'Noah Davis',    'Manager',     'HR',          60000);
 
 INSERT INTO Employee(EmployeeID,Name,Position,Department)
 values(8,           'Ava Miller',    'Consultant',  'IT');
+
 **Output:**
 
 ![image](https://github.com/user-attachments/assets/4f08e69d-3696-41cc-93a1-14c259564577)
+
 **Question 2**
 ---
 ![image](https://github.com/user-attachments/assets/bad81a8b-bad3-4abe-9bb9-a78f3df20d50)
