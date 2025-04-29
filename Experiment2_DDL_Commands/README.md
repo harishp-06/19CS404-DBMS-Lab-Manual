@@ -158,12 +158,17 @@ RENAME COLUMN job_title To Designation;
 ![image](https://github.com/user-attachments/assets/104c3a88-8e14-4894-b4c9-220a25c1fd28)
 
 ```sql
--- Paste your SQL code below for Question 4
-```
+ CREATE TABLE jobs (  
+    job_id INTEGER PRIMARY KEY,  
+    job_title TEXT NOT NULL DEFAULT '',  
+    min_salary INTEGER NOT NULL DEFAULT 8000,  
+    max_salary INTEGER DEFAULT NULL  
+);
 
 **Output:**
 
-![Output4](output.png)
+![image](https://github.com/user-attachments/assets/6e389b67-8bea-4e99-9c42-d343c6846f92)
+
 
 **Question 5**
 ---
